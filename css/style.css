@@ -157,27 +157,14 @@ input {
   justify-content: center;
 }
 
-.Berechnen {
-  font-family: monospace;
-  font-size: 1.5rem;
-  color: #fafafa;
-  text-transform: uppercase;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: 2px solid rgb(255, 255, 255, 0.1);
-  background: #252525;
-  box-shadow: 3px 3px #fafafa;
-  cursor: pointer;
-  margin: 35px 0;
-  position: absolute;
-  left: 550px;
+button {
+  background-color: yellow !important;
+  border: 10px;
+  border-radius: 100px;
+  justify-content: center;
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  position: fixed;
-}
-
-.Berechnen:active {
-  box-shadow: none;
-  transform: translate(3px, 3px);
+  left: 320px;
+  width: 200px;
 }
