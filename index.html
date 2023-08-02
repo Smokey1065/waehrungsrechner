@@ -17,6 +17,8 @@
   </head>
 
   <body>
+    <script src="Javascript/script.js"></script>
+
     <div class="navbar">
       <img src="img/menu.png" alt="" />
       Währungsrechner
@@ -24,23 +26,23 @@
 
     <div class="input-container">
       <img src="img/eu.png" alt="" class="flag" />
-      <input type="text" />
+      <input id="euroFeld" type="text" />
       <span class="währung">EUR</span>
     </div>
 
-    <div class="arrows">
+    <div class="container-center">
       <img src="img/arrows.png" alt="" />
     </div>
 
     <div class="input-container">
       <img src="img/usa.png" alt="" class="flag" />
-      <input type="text" />
+      <input id="usd" type="text" />
       <span class="währung">USD</span>
     </div>
 
-    <div>
-      <button>
-        Umrechnung starten
+    <div class="container-center">
+      <button onclick="berechnen()">
+        Berechnen
       </button>
     </div>
   </body>
