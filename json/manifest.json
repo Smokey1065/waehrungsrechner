@@ -1,7 +1,8 @@
 {
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
-    "display": "browser",
+    "name": "Währungsrechner ",
+    "short_name": "Wr",
+    "theme_color": "#faf8f7",
+    "display": "fullscreen",
     "scope": "/",
-    "start_url": "/"
+    "start_url": "/index.htm"
   }
