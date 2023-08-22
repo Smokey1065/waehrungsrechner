@@ -90,9 +90,7 @@ body {
 }
 
 /* Stil für den eigentlichen Inhalt, der nach dem Laden angezeigt wird */
-.content {
-  
-}
+
   /* //Hier ist das 3d Bild */
 .bild{
   display: flex;
