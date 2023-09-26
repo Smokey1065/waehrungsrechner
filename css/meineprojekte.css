@@ -115,7 +115,7 @@ body {
   
   .card.card-shadow {
     border: none;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 205, .20);
+    box-shadow: 0 2px 5px 0 rgba(0, 102, 255, .20);
   }
   
   .card-header {
