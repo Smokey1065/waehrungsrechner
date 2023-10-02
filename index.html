@@ -93,7 +93,7 @@
     <div class="input-container">
       <img src="/img/usa.png" id="flagge" class="flag" />
       <select id="currencytwo" class="menu" name="currency">
-        <option value="USD" class="op" selected>USD</option>
+        <option value="USD" class="op">USD</option>
         <option value="EUR" class="op">EUR</option>
         <option value="GBP" class="op">GBP</option>
       </select>
@@ -104,7 +104,7 @@
         class="puts"
         disabled
       />
-      <span class="währung" id="währung">EUR</span>
+      <span class="währung" id="währung">USD</span>
     </div>
 
     <div class="container-center">
@@ -166,16 +166,13 @@
 
         switch (selectedCurrencytwo) {
           case "EUR":
-            currency.innerHTML = "EUR";
+            währung.innerHTML = "EUR";
             break;
           case "USD":
-            currency.innerHTML = "USD";
+            währung.innerHTML = "USD";
             break;
           case "GBP":
-            currency.innerHTML = "GBP";
-            break;
-          case "UAH":
-            currency.innerHTML = "UAH";
+            währung.innerHTML = "GBP";
             break;
         }
       });
