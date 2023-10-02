@@ -77,6 +77,8 @@
         <option value="GBP" class="op">GBP</option>
         <option value="UAH" class="op">UAH</option>
         <option value="THB" class="op">THB</option>
+        <option value="RUB" class="op">RUB</option>
+        <option value="JPY" class="op">JPY</option>
       </select>
       <input value="0" type="text" class="puts" id="amount-one" />
       <span class="währung" id="currency">EUR</span>
@@ -99,6 +101,8 @@
         <option value="GBP" class="op">GBP</option>
         <option value="THB" class="op">THB</option>
         <option value="UAH" class="op">UAH</option>
+        <option value="RUB" class="op">RUB</option>
+        <option value="JPY" class="op">JPY</option>
       </select>
       <input
         type="text"
@@ -137,6 +141,12 @@
           case "THB":
             currency.innerHTML = "THB";
             break;
+          case "RUB":
+            currency.innerHTML = "RUB";
+            break;
+          case "JPY":
+            currency.innerHTML = "JPY";
+            break;
         }
       });
 
@@ -162,6 +172,12 @@
           case "THB":
             flag.src = "/img/thb.png";
             break;
+          case "RUB":
+            flag.src = "/img/rub.png";
+            break;
+          case "JPY":
+            flag.src = "/img/JPY.png";
+            break;
         }
       });
     </script>
@@ -186,7 +202,12 @@
           case "THB":
             währung.innerHTML = "THB";
             break;
-
+          case "RUB":
+            währung.innerHTML = "RUB";
+            break;
+          case "JPY":
+            währung.innerHTML = "JPY";
+            break;
         }
       });
 
@@ -212,7 +233,12 @@
           case "THB":
             flagge.src = "/img/thb.png";
             break;
-          
+          case "RUB":
+            flagge.src = "/img/rub.png";
+            break;
+          case "JPY":
+            flagge.src = "/img/JPY.png";
+            break;
         }
       });
     </script>
