@@ -126,7 +126,17 @@ div {
   left: 70px;
 }
 
-input {
+.menu {
+  width: 60px;
+  position: absolute;
+  left: 69px;
+  top: 60px;
+  background-color: transparent;
+  color: white;
+  border: none;
+}
+
+.puts {
   border: 1px solid rgb(255, 255, 255, 0.1);
   outline: none;
   height: 50px;
@@ -253,7 +263,31 @@ button:active {
   100% { transform: rotate(360deg); }
 }
 
-/* Stil für den eigentlichen Inhalt, der nach dem Laden angezeigt wird */
+.upd {
+  padding-top: 90px;
+  
+}
 
 
+.op {
+  color: black;
+  background: transparent;
+}
+
+.swap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+  margin-right: -300px;
+  margin-left: 40px;
+  width: 100px;
+  height: 10px;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 

@@ -20,7 +20,3 @@ window.addEventListener("load", function () {
   document.querySelector(".content").style.display = "block";
 });
 
-
-
-
-

@@ -45,10 +45,10 @@
   </head>
 
   <body>
-    <script src="Javascript/script.js"></script>
 
     <div class="preloader">
-      <div class="loader"></div>
+      <div class="loader">       
+      </div>
     </div>
 
     <div id="mySidenav" class="sidenav">
@@ -69,24 +69,124 @@
       <span class="wr">Währungsrechner</span>
     </div>
 
+    <div class="pa"></div>
+
     <div class="input-container">
-      <img src="img/eu.png" alt="" class="flag" />
-      <input id="euroFeld" value="0" type="text" />
-      <span class="währung">EUR</span>
+      <img id="flag" src="/img/eu.png" class="flag" />
+      <select id="currencyone" name="country" class="menu">
+        <option value="EUR" class="op" selected>EUR</option>
+        <option value="USD" class="op">USD</option>
+        <option value="GBP" class="op">GBP</option>
+      </select>
+      <input value="0" type="text" class="puts" id="amount-one" />
+      <span class="währung" id="currency">EUR</span>
     </div>
 
     <div class="container-center">
       <img src="img/arrows.png" alt="" />
+      <div class="swap-rate-container">
+        <!--<button class="swap" id="swap">Swap</button>-->
+      </div>
     </div>
 
+    <div class="rate" id="rate"></div>
+
     <div class="input-container">
-      <img src="img/usa.png" alt="" class="flag" />
-      <input id="usd" value="0,00" type="text" />
-      <span class="währung">USD</span>
+      <img src="/img/usa.png" id="flagge" class="flag" />
+      <select id="currencytwo" class="menu" name="currency">
+        <option value="USD" class="op">USD</option>
+        <option value="EUR" class="op">EUR</option>
+        <option value="GBP" class="op">GBP</option>
+      </select>
+      <input type="text" id="amount-two" placeholder="0" class="puts" disabled/>
+      <span class="währung" id="währung">EUR</span>
     </div>
 
     <div class="container-center">
-      <button style="cursor: pointer;" onclick="berechnen()">Berechnen</button>
+      <!--<button style="cursor: pointer" onclick="berechnen()">Berechnen</button>
     </div>
+
+    <script>
+      var currencyone = document.getElementById("currencyone");
+      var currency = document.getElementById("currency");
+
+      currencyone.addEventListener("change", function () {
+        var selectedCurrencyone = currencyone.value;
+
+        switch (selectedCurrencyone) {
+            case "EUR":
+            currency.innerHTML = "EUR";
+            break;
+            case "USD":
+            currency.innerHTML = "USD";
+            break;
+            case "GBP":
+            currency.innerHTML = "GBP";
+            break;
+        }
+      });
+
+      var currencyone = document.getElementById("currencyone");
+      var flag = document.getElementById("flag");
+
+      currencyone.addEventListener("change", function () {
+        var selectedCurrencyone = currencyone.value;
+
+        switch (selectedCurrencyone) {
+          case "EUR":
+            flag.src = "/img/eu.png";
+            break;
+          case "USD":
+            flag.src = "/img/usa.png";
+            break;
+          case "GBP":
+            flag.src = "/img/uk.jpg";
+            break;
+        }
+      });
+    </script>
+
+    <script>
+      var currencytwo = document.getElementById("currencytwo");
+      var währung = document.getElementById("währung");
+
+      currencytwo.addEventListener("change", function () {
+        var selectedCurrencytwo = currencytwo.value;
+
+        switch (selectedCurrencytwo) {
+          case "EUR":
+            währung.innerHTML = "EUR";
+            break;
+          case "USD":
+            währung.innerHTML = "USD";
+            break;
+          case "GBP":
+            währung.innerHTML = "GBP";
+            break;
+        }
+      });
+
+      var currencytwo = document.getElementById("currencytwo");
+      var flagge = document.getElementById("flagge");
+
+      currencytwo.addEventListener("change", function () {
+        var selectedCurrencytwo = currencytwo.value;
+
+        switch (selectedCurrencytwo) {
+          case "EUR":
+            flagge.src = "/img/eu.png";
+            break;
+          case "USD":
+            flagge.src = "/img/usa.png";
+            break;
+          case "GBP":
+            flagge.src = "/img/uk.jpg";
+            break;
+        }
+      });
+    </script>
+
+    <script src="Javascript/script.js"></script>
+    <script src="Javascript/currency.js"></script>
   </body>
 </html>
