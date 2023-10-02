@@ -76,6 +76,7 @@
         <option value="USD" class="op">USD</option>
         <option value="GBP" class="op">GBP</option>
         <option value="UAH" class="op">UAH</option>
+        <option value="THB" class="op">THB</option>
       </select>
       <input value="0" type="text" class="puts" id="amount-one" />
       <span class="währung" id="currency">EUR</span>
@@ -96,6 +97,8 @@
         <option value="USD" class="op">USD</option>
         <option value="EUR" class="op">EUR</option>
         <option value="GBP" class="op">GBP</option>
+        <option value="THB" class="op">THB</option>
+        <option value="UAH" class="op">UAH</option>
       </select>
       <input
         type="text"
@@ -131,6 +134,9 @@
           case "UAH":
             currency.innerHTML = "UAH";
             break;
+          case "THB":
+            currency.innerHTML = "THB";
+            break;
         }
       });
 
@@ -153,6 +159,9 @@
           case "UAH":
             flag.src = "/img/ukr.png";
             break;
+          case "THB":
+            flag.src = "/img/thb.png";
+            break;
         }
       });
     </script>
@@ -174,6 +183,10 @@
           case "GBP":
             währung.innerHTML = "GBP";
             break;
+          case "THB":
+            währung.innerHTML = "THB";
+            break;
+
         }
       });
 
@@ -193,6 +206,13 @@
           case "GBP":
             flagge.src = "/img/uk.jpg";
             break;
+          case "UAH":
+            flagge.src = "/img/ukr.png";
+            break;
+          case "THB":
+            flagge.src = "/img/thb.png";
+            break;
+          
         }
       });
     </script>
