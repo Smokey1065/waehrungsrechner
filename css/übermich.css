@@ -104,3 +104,9 @@ body {
   margin: auto;
   margin-top: 70px;
 }
+
+.author {
+  padding-top: 420px;
+  gap: 1rem;
+  font-size: smaller;
+}

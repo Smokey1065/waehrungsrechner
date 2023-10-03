@@ -232,6 +232,12 @@ button:active {
   margin-left: 50px;
 }
 
+.author {
+  padding-top: 420px;
+  gap: 1rem;
+  font-size: smaller;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}

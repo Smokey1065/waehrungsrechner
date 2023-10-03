@@ -184,3 +184,9 @@ body {
   .btn + .btn {
     margin-left: .25rem;
   }
+
+  .author {
+    padding-top: 420px;
+    gap: 1rem;
+    font-size: smaller;
+  }
