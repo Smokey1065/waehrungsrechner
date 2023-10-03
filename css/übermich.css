@@ -85,17 +85,22 @@ body {
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Stil für den eigentlichen Inhalt, der nach dem Laden angezeigt wird */
 
-  /* //Hier ist das 3d Bild */
-.bild{
+/* //Hier ist das 3d Bild */
+.nasaimg {
   display: flex;
-  align-items: end;
+  align-items: center;
   justify-content: center;
-  padding-top: 30px;
+  border-radius: 50%;
+  margin: auto;
+  margin-top: 70px;
 }
-
