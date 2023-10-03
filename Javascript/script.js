@@ -21,8 +21,14 @@ window.addEventListener("load", function () {
 });
 
 function linkver(){
-  confirm('Willst du auf meine linkerversite gehen?')
-  document.location.href="https://alislinkversite.netlify.app/";
+  let text = "Sie werden umgeleitet auf meine Link Seite. Viel spaß :D";
+  if (confirm(text) == true) {
+    text = "You pressed OK!";
+    document.location.href="https://alislinkversite.netlify.app/";
+  } else {
+    text = "You canceled!";
+  }
+  document.getElementById("demo").innerHTML = text;
 }
 
 //function myFunction() {
