@@ -20,3 +20,12 @@ window.addEventListener("load", function () {
   document.querySelector(".content").style.display = "block";
 });
 
+function linkver(){
+  confirm('Willst du auf meine linkerversite gehen?')
+  document.location.href="https://alislinkversite.netlify.app/";
+}
+
+//function myFunction() {
+//  var myWindow = window.open("index.html", "", "width=400, height=200");
+//  myWindow.blur();
+//}
