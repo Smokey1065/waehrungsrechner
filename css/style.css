@@ -104,6 +104,11 @@ body {
   
   font-size: 20px;
 }
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .wr {
   font-size: 30px;
 }

@@ -8,6 +8,10 @@ body {
   font-size: 20px;
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 .navbar {
   padding: 16px;
   display: flex;
