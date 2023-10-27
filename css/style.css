@@ -203,6 +203,10 @@ button:active {
   box-shadow: #e6c109 0px 3px 2px,#000 0px 3px 5px;
 }
 
+.sidenav::-webkit-scrollbar{
+  display: none;
+}
+
 .sidenav {
   height: 100%;
   width: 0;
