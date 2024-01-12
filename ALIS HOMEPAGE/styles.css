@@ -58,14 +58,17 @@ button {
     margin: 30px;
     position: sticky;
     border-radius: 65px; /* Abrundung der Ecken */
-    
+    box-shadow: #e6c109 0px 7px 2px, #000 0px 8px 5px;
 }
 
 .closebtn {
     color: black;
-
-
 } 
+
+button:hover {
+  opacity: 1;
+}
+
 .pe {
     background-color: #888888;
     color: white;
