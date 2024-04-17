@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "type": "chrome",
+            "type": "Opera GX",
             "name": "http://127.0.0.1:3000/meineprojekte.html",
             "request": "launch",
             "url": "http://127.0.0.1:3000/meineprojekte.html"
