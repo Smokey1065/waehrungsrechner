@@ -118,11 +118,31 @@ div {
   margin-bottom: 50px;
 }
 .navbar {
-  padding: 16px;
+  padding: 17px;
+  padding-bottom: 0.1px;
   display: flex;
   align-items: center;
   gap: 17px;
-  background-color: rgb(255, 255, 255, 0.1);
+  width: auto !important;
+  height: 100%;
+  --s: 130px; /* control the size */
+  --c1: #1d1d1d;
+  --c2: #4e4f51;
+  --c3: #3c3c3c;
+
+  background: repeating-conic-gradient(
+        from 30deg,
+        #0000 0 120deg,
+        var(--c3) 0 180deg
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) * 0.577),
+    repeating-conic-gradient(
+      from 30deg,
+      var(--c1) 0 60deg,
+      var(--c2) 0 120deg,
+      var(--c3) 0 180deg
+    );
+  background-size: var(--s) calc(var(--s) * 0.577);
 }
 
 .flag {
