@@ -24,7 +24,7 @@ function linkver(){
   let text = "Sie werden umgeleitet auf meine Link Seite. Viel spaß :D";
   if (confirm(text) == true) {
     text = "You pressed OK!";
-    document.location.href="https://alislinkversite.netlify.app/";
+    document.location.href="http://linksite.drflashy.de";
   } else {
     text = "You canceled!";
   }
