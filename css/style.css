@@ -118,7 +118,8 @@ div {
   margin-bottom: 50px;
 }
 .navbar {
-  padding: 17px;
+  padding: 1px;
+  padding-left: 10px;
   padding-bottom: 0.1px;
   display: flex;
   align-items: center;
