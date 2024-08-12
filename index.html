@@ -5,9 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Währungsrechner</title>
     <link href="css/style.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"/>
-    <link rel="website icon" type="png" href="img/business-gd7af2465f_640.png"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css"
+    />
+    <link
+      rel="website icon"
+      type="png"
+      href="img/business-gd7af2465f_640.png"
+    />
     <link rel="manifest" href="manifest.json" />
 
     <meta name="mobile-web-app-capable" content="yes" />
@@ -16,10 +26,19 @@
     <meta name="apple-mobile-web-app-title" content="Währungsrechner" />
     <meta name="theme-color" content="#faf8f7" />
     <meta name="msapplication-navbutton-color" content="#faf8f7" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
     <meta name="msapplication-starturl" content="/" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <script src="https://kit.fontawesome.com/98fce8e17d.js" crossorigin="anonymous"></script>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script
+      src="https://kit.fontawesome.com/98fce8e17d.js"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
   </head>
 
@@ -36,12 +55,16 @@
       <a href="#"></a>
       <a href="/meineprojekte.html">Meine Projekte</a>
       <a href=""></a>
-      <br/>
+      <br />
       <a href="ALIS HOMEPAGE/index.html">Meine Hompage</a>
       <div class="author">
-        <a href="#"><p>Website von 
-          <br/>
-          Flashy</p></a>
+        <a href="#"
+          ><p>
+            Website von
+            <br />
+            Flashy
+          </p></a
+        >
       </div>
     </div>
 
@@ -67,6 +90,7 @@
         <option value="JPY" class="op">Yen</option>
         <option value="NOK" class="op">Krone</option>
         <option value="INR" class="op">Rupie</option>
+        <option value="CHF" class="op">Franken</option>
       </select>
       <input value="0" type="text" class="puts" id="amount-one" />
       <span class="währung" id="currency">EUR</span>
@@ -89,10 +113,11 @@
         <option value="GBP" class="op">Pfund</option>
         <option value="UAH" class="op">Hrywnja</option>
         <option value="THB" class="op">Baht</option>
-        <option value="RUB" class="op">Rubel </option>
+        <option value="RUB" class="op">Rubel</option>
         <option value="JPY" class="op">Yen</option>
         <option value="NOK" class="op">Krone</option>
         <option value="INR" class="op">Rupie</option>
+        <option value="CHF" class="op">Franken</option>
       </select>
       <input
         type="text"
@@ -143,6 +168,9 @@
           case "INR":
             currency.innerHTML = "INR";
             break;
+          case "CHF":
+            currency.innerHTML = "CHF";
+            break;
         }
       });
 
@@ -180,6 +208,9 @@
           case "INR":
             flag.src = "/img/inr.png";
             break;
+          case "CHF":
+            flag.src = "/img/swissflag.png";
+            break;
         }
       });
     </script>
@@ -216,6 +247,9 @@
           case "INR":
             währung.innerHTML = "INR";
             break;
+          case "CHF":
+            währung.innerHTML = "CHF";
+            break;
         }
       });
 
@@ -249,14 +283,15 @@
             break;
           case "NOK":
             flagge.src = "/img/nok.png";
-            break; 
+            break;
           case "INR":
             flagge.src = "/img/inr.png";
             break;
+          case "CHF":
+            flagge.src = "/img/swissflag.png";
         }
       });
     </script>
-    
 
     <script src="Javascript/script.js"></script>
     <script src="Javascript/currency.js"></script>
