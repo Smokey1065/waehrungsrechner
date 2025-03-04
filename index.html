@@ -135,177 +135,47 @@
       <!--<button style="cursor: pointer" onclick="berechnen()">Berechnen</button>-->
     </div>
 
-    <script>
-      var currencyone = document.getElementById("currencyone");
-      var currency = document.getElementById("currency");
+<script>
+  // Währungen und zugehörige Flaggen in einem Objekt speichern
+  var currencyData = {
+    "EUR": "/img/eu.png",
+    "USD": "/img/usa.png",
+    "GBP": "/img/uk.jpg",
+    "UAH": "/img/ukr.png",
+    "THB": "/img/thb.png",
+    "RUB": "/img/rub.png",
+    "JPY": "/img/JPY.png",
+    "NOK": "/img/nok.png",
+    "INR": "/img/inr.png",
+    "CHF": "/img/swissflag.png",
+    "HRK": "/img/hrk.png"
+  };
 
-      currencyone.addEventListener("change", function () {
-        var selectedCurrencyone = currencyone.value;
+  function updateCurrencyAndFlag(selectElementId, currencyDisplayId, flagImgId) {
+    var selectElement = document.getElementById(selectElementId);
+    var currencyDisplay = document.getElementById(currencyDisplayId);
+    var flagImg = document.getElementById(flagImgId);
 
-        switch (selectedCurrencyone) {
-          case "EUR":
-            currency.innerHTML = "EUR";
-            break;
-          case "USD":
-            currency.innerHTML = "USD";
-            break;
-          case "GBP":
-            currency.innerHTML = "GBP";
-            break;
-          case "UAH":
-            currency.innerHTML = "UAH";
-            break;
-          case "THB":
-            currency.innerHTML = "THB";
-            break;
-          case "RUB":
-            currency.innerHTML = "RUB";
-            break;
-          case "JPY":
-            currency.innerHTML = "JPY";
-            break;
-          case "NOK":
-            currency.innerHTML = "NOK";
-            break;
-          case "INR":
-            currency.innerHTML = "INR";
-            break;
-          case "CHF":
-            currency.innerHTML = "CHF";
-            break;
-          case "HRK":
-            currency.innerHTML = "HRK";
-            break;
-        }
-      });
+    selectElement.addEventListener("change", function () {
+      var selectedCurrency = selectElement.value;
 
-      var currencyone = document.getElementById("currencyone");
-      var flag = document.getElementById("flag");
+      // Währungsanzeige aktualisieren
+      if (currencyDisplay) {
+        currencyDisplay.innerHTML = selectedCurrency;
+      }
 
-      currencyone.addEventListener("change", function () {
-        var selectedCurrencyone = currencyone.value;
+      // Flaggenbild aktualisieren
+      if (flagImg && currencyData[selectedCurrency]) {
+        flagImg.src = currencyData[selectedCurrency];
+      }
+    });
+  }
 
-        switch (selectedCurrencyone) {
-          case "EUR":
-            flag.src = "/img/eu.png";
-            break;
-          case "USD":
-            flag.src = "/img/usa.png";
-            break;
-          case "GBP":
-            flag.src = "/img/uk.jpg";
-            break;
-          case "UAH":
-            flag.src = "/img/ukr.png";
-            break;
-          case "THB":
-            flag.src = "/img/thb.png";
-            break;
-          case "RUB":
-            flag.src = "/img/rub.png";
-            break;
-          case "JPY":
-            flag.src = "/img/JPY.png";
-            break;
-          case "NOK":
-            flag.src = "/img/nok.png";
-            break;
-          case "INR":
-            flag.src = "/img/inr.png";
-            break;
-          case "CHF":
-            flag.src = "/img/swissflag.png";
-            break;
-          case "HRK":
-            flag.src = "/img/hrk.png";
-            break;
-        }
-      });
-    </script>
-
-    <script>
-      var currencytwo = document.getElementById("currencytwo");
-      var währung = document.getElementById("währung");
-
-      currencytwo.addEventListener("change", function () {
-        var selectedCurrencytwo = currencytwo.value;
-
-        switch (selectedCurrencytwo) {
-          case "EUR":
-            währung.innerHTML = "EUR";
-            break;
-          case "USD":
-            währung.innerHTML = "USD";
-            break;
-          case "GBP":
-            währung.innerHTML = "GBP";
-            break;
-          case "THB":
-            währung.innerHTML = "THB";
-            break;
-          case "RUB":
-            währung.innerHTML = "RUB";
-            break;
-          case "JPY":
-            währung.innerHTML = "JPY";
-            break;
-          case "NOK":
-            währung.innerHTML = "NOK";
-            break;
-          case "INR":
-            währung.innerHTML = "INR";
-            break;
-          case "CHF":
-            währung.innerHTML = "CHF";
-            break;
-          case "HRK":
-            währung.innerHTML = "HRK";
-            break;
-        }
-      });
-
-      var currencytwo = document.getElementById("currencytwo");
-      var flagge = document.getElementById("flagge");
-
-      currencytwo.addEventListener("change", function () {
-        var selectedCurrencytwo = currencytwo.value;
-
-        switch (selectedCurrencytwo) {
-          case "EUR":
-            flagge.src = "/img/eu.png";
-            break;
-          case "USD":
-            flagge.src = "/img/usa.png";
-            break;
-          case "GBP":
-            flagge.src = "/img/uk.jpg";
-            break;
-          case "UAH":
-            flagge.src = "/img/ukr.png";
-            break;
-          case "THB":
-            flagge.src = "/img/thb.png";
-            break;
-          case "RUB":
-            flagge.src = "/img/rub.png";
-            break;
-          case "JPY":
-            flagge.src = "/img/JPY.png";
-            break;
-          case "NOK":
-            flagge.src = "/img/nok.png";
-            break;
-          case "INR":
-            flagge.src = "/img/inr.png";
-            break;
-          case "CHF":
-            flagge.src = "/img/swissflag.png";
-          case "HRK":
-            flagge.src = "/img/hrk.png";
-        }
-      });
-    </script>
-
+  // Funktionen für beide Select-Elemente aufrufen
+  updateCurrencyAndFlag("currencyone", "currency", "flag");
+  updateCurrencyAndFlag("currencytwo", "währung", "flagge");
+</script>
+    
     <script src="Javascript/script.js"></script>
     <script src="Javascript/currency.js"></script>
   </body>
