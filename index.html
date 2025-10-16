@@ -135,52 +135,9 @@
       <!--<button style="cursor: pointer" onclick="berechnen()">Berechnen</button>-->
     </div>
 
-    <script>
-      // Währungen und zugehörige Flaggen in einem Objekt speichern
-      var currencyData = {
-        EUR: "/img/eu.png",
-        USD: "/img/usa.png",
-        GBP: "/img/uk.jpg",
-        UAH: "/img/ukr.png",
-        THB: "/img/thb.png",
-        RUB: "/img/rub.png",
-        JPY: "/img/JPY.png",
-        NOK: "/img/nok.png",
-        INR: "/img/inr.png",
-        CHF: "/img/swissflag.png",
-        HRK: "/img/hrk.png",
-      };
-
-      function updateCurrencyAndFlag(
-        selectElementId,
-        currencyDisplayId,
-        flagImgId
-      ) {
-        var selectElement = document.getElementById(selectElementId);
-        var currencyDisplay = document.getElementById(currencyDisplayId);
-        var flagImg = document.getElementById(flagImgId);
-
-        selectElement.addEventListener("change", function () {
-          var selectedCurrency = selectElement.value;
-
-          // Währungsanzeige aktualisieren
-          if (currencyDisplay) {
-            currencyDisplay.innerHTML = selectedCurrency;
-          }
-
-          // Flaggenbild aktualisieren
-          if (flagImg && currencyData[selectedCurrency]) {
-            flagImg.src = currencyData[selectedCurrency];
-          }
-        });
-      }
-
-      // Funktionen für beide Select-Elemente aufrufen
-      updateCurrencyAndFlag("currencyone", "currency", "flag");
-      updateCurrencyAndFlag("currencytwo", "währung", "flagge");
-    </script>
-
     <script src="Javascript/script.js"></script>
     <script src="Javascript/currency.js"></script>
+    ´
+    <script src="Javascript/preloader.js"></script>
   </body>
 </html>
