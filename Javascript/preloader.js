@@ -1,7 +1,13 @@
 // Warte bis die Seite geladen ist
 window.addEventListener("load", function () {
-  // Verstecke den Preloader
-  document.querySelector(".preloader").style.display = "none";
-  // Zeige den eigentlichen Inhalt
-  document.querySelector(".content").style.display = "block";
+  const preloader = document.querySelector(".preloader");
+  const content = document.querySelector(".content");
+
+  if (preloader) {
+    preloader.style.display = "none";
+  }
+
+  if (content) {
+    content.style.display = "block";
+  }
 });
